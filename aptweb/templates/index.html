@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+</head>
+<body>
+    <img src="{% static 'logo.png' %}" style="display: block; margin-right: auto; margin-left: auto">
+    <div style="text-align: center">
+        <form method="GET" action="search">
+            <div class="form-group">
+                <input type="text" placeholder="Search here ((Fakes Google &#x1F60E;))" name="q" id="searchtext" class="form-control" required style="width: 80%; margin-right: auto; margin-left: auto">
+            </div>
+            <button type="submit" class="btn btn-default">
+                Search
+            </button>
+        </form>
+    </div>
+</body>
+</html>

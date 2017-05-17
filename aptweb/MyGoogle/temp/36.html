@@ -1,0 +1,215 @@
+<!-- http://www.dmoztools.net/docs/en/searchguide.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport"           content="width=device-width, initial-scale=1">
+  <title>DMOZ - Search Guide</title>
+  <link rel="icon" href="/img/mozilla.gif" type="image/x-icon" />
+  <link rel="shortcut icon" href="/img/mozilla.gif" type="image/x-icon" />
+  <link href="/css/docs.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet"    type="text/css"      href="/css/docs.css"   />
+  <link rel="stylesheet"    type="text/css"      href="/css/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+<div id="headbar">
+<img class="aol" src="/img/aolpartner.png" alt="In Partnership with AOL Search" />
+<h1><a href="/" title="Return to DMOZ Home">DMOZ</a></h1>
+</div><div id="side"><div class="navhead">Open Directory Project</div>
+<ul class="nav">
+<li><b><a href="/">Directory</a></b></li>
+<li><b><a href="/about.html">About DMOZ</a></b>
+<ul>
+<li><a href="/docs/en/help/become.html">Become an Editor</a></li>
+<li><a href="/docs/en/socialcontract.html">Social Contract</a></li>
+<li><a href="/docs/en/rdf.html">DMOZ Data - RDF</a></li>
+<li><a href="/docs/en/help/submit.html">Submitting a Site</a></li>
+</ul>
+</li>
+<li><b><a href="/guidelines/">Editing Guidelines</a></b>
+</li>
+<li><b><a href="/erz/">Editor Resources</a></b>
+</li>
+</ul>
+<div class="navhead">In Other Languages</div>
+<ul class="nav">
+</ul>
+</div>
+<div id="mainContent">
+<h1>Search Guide</h1>
+
+<h2>Simple Search</h2>
+<p>Simple searches find entries that include all of the search terms. Search results are ranked and displayed 25 sites at a time. The sites that are displayed are grouped by their category. For example, a search on:
+<pre> 
+        C++
+</pre> will return all the sites that have the word C++ in them. </p>
+
+<p>Searches with multiple terms will automatically insert an "and" between all the terms, so that
+only sites with all of the search words in them will be returned. For example, a search on 
+<pre>
+        golf clubs 
+</pre>
+will only return sites that have <b>both</b> golf and clubs in the sites name and description. Sites on "tennis clubs" or "golf balls" will not be displayed (unless they also mention golf and clubs).</p>
+
+<h2>Phrase Search</h2>
+<p>
+Sometimes the order of the search terms matters. Using phrase searching can greatly reduce the
+number of sites that are matched by a search. For example if you searched for:
+<pre>
+        "Tour de France"
+</pre>
+You would only get sites that had the three words: tour, de and France in them in that order.</p>
+
+<h2>Search Defaults</h2>
+<p>All searches use <b>and</b> as the default linking operator between all of the search terms. Thus searching for 
+<pre> 
+        red herring
+</pre>
+is the same as searching for:
+<pre> 
+        red and herring
+</pre>
+For both of these searches, only those sites with "red" <b>and</b> "herring" in the site name or description will be returned. Sites that only mention "red" but not "herring" will not be displayed. To get sites with either "red" <b>or</b> "herring" use the keyword <b>or</b>. See the next section on using Boolean operators.
+</p>
+
+
+<h2>Boolean Search</h2>
+<p>There are several Boolean operators to choose from, they are: <b>or</b>, <b>and</b>, and <b>andnot</b>. Terms linked by the <b>and</b> operator will return only those sites that match all of the search terms linked by the <b>and</b> operator. This is the default, if you don't use any Boolean operators, then only those sites that contain at least one occurrence of each search term will be returned..</p>
+
+<p>Terms linked by the <b>or</b> operator will return those sites that match any of the search terms linked by <b>or</b>. For example:
+<pre>
+        grey or gray and parrot
+</pre></p>
+
+<p>Terms linked by the <b>andnot</b> operator will exclude all sites that match the search term following the <b>andnot</b>. For example:
+<pre>
+        random andnot house
+</pre>
+will find sites about randomness, but exclude sites about the publisher, Random House.</p>
+
+<h2>Wildcard Search</h2>
+
+<p>
+The search can do some limited wild-carding. Specifically, wildcard completion. This is useful when you are trying to match a term that may or may not be plural or might have one of several verb tenses. For example if you wanted to find sites that had to do with bicycling you might use the following search:
+<pre>
+        Bicycl*
+</pre>
+This would match sites on <b>Bicycling</b>, <b>Bicycle</b>, and
+<b>Bicycles</b>.</p>
+
+<p>The search does not support arbitrary wildcards, so searches on "*cycling" or "Arch*ology" will <b>not</b> work.</p>
+
+
+<h2>Field Searches</h2>
+<p>You can limit your search to either the title, description, or URL of the site you are looking for. Just prefix your search term with "t:" to search titles, "d:" to search descriptions, and "u:" to search the url. For example to search for the occurrence of the word "bicycling" in the URL of a site use the following search:
+<pre>
+        u:Bicycling
+</pre>
+</p>
+
+<h2>Shorthand Search Terms</h2>
+<p>You can prefix search terms with <b>"-"</b> and <b>"+"</b> 
+to force the exclusion or inclusion of that term. This is really just shorthand for using the <b>andnot</b> and <b>and</b> Boolean operators.</p>
+
+<p>The following example will return all the sites on baseball, except those that mention "umpire".
+<pre>
+        +baseball -umpire
+</pre></p>
+
+<p>Note: You cannot begin a search with a <b>"-"</b> term. You must put some other search term first. </p>
+
+<h2>Complex Search</h2>
+<p>You can mix and match the above search methods to create very complex searches. This search will return all sites on Lego trains, but exclude all the links that mention Duplo:
+<pre>
+        lego train* andnot duplo
+</pre>
+
+<p>This search will find references to racing, except those that are about racing
+cars or motorcycles.
+<pre>
+        racing -auto -car -motorcycle -road -nascar
+</pre>
+</p>
+
+<h2>What is MetaSearch?</h2>
+<p>MetaSearch lets you search query many different search engines, while only having to type your query once.  When you search, a "MetaSearch" bar appears at the bottom of the search results page.  Clicking on one of the links will forward your query to another search engine, so you don't have to type it again.</p>
+
+<blockquote>
+<hr>
+<table summary="List of alternative search engines present on DMOZ pages. This instance was compiled in July 2016, it is subject to change in the live directory."><tr><td valign="top">&quot;<b>OrganizeTheWeb
+</b>&quot; search on:</td><td valign="top"><small>
+<a href="http://search.aol.com/aol/search?query=OrganizeTheWeb">AOL</a> -
+<a href="http://www.ask.com/web?q=OrganizeTheWeb">Ask</a> -
+<a href="https://www.bing.com/search?q=OrganizeTheWeb">Bing</a> -
+<a href="https://duckduckgo.com/?q=OrganizeTheWeb">DuckDuckGo</a> -
+<a href="https://gigablast.com/search?q=OrganizeTheWeb">Gigablast</a> -
+<a href="https://www.google.com/search?q=OrganizeTheWeb">Google</a> -
+<a href="https://www.ixquick.com/do/search/?q=OrganizeTheWeb">ixquick</a> -
+<a href="https://search.yahoo.com/search?p=OrganizeTheWeb">Yahoo</a> -
+<a href="https://www.yandex.com/yandsearch?text=OrganizeTheWeb">Yandex</a> -
+<a href="http://new.yippy.com/search?query=OrganizeTheWeb">Yippy</a>
+</small></td></tr></table>
+<hr>
+</blockquote>
+
+<p>This makes DMOZ a good place to start searches, since if you don't find
+anything in it, you can easily search other directories on the web too.</p>
+
+<!-- <h2>Category Roulette</h2>
+<p>A search with an empty search box will return four categories picked
+at random from the DMOZ directory.
+<a href="http://search.dmoz.org/cgi-bin/search?search=">Try it.</a></p> -->
+
+
+ 
+
+<div class="footer">
+
+Last update:
+<!-- LAST_UPDATE --> Sun Jul 03 07:19 EDT 2016
+<br />
+Copyright &copy; 2016 AOL Inc. (<a href="/docs/en/termsofuse.html">Terms of Use</a> - <a href="/docs/en/license.html">License</a>)
+
+</div>
+
+<script type="text/javascript">
+
+  var pageName = window.location.href.toString().replace(/.*\//, '');
+
+  bN_cfg =
+  {
+    h: location.hostname
+  };
+
+  function runOmni()
+  {
+    s_265.pfxID="dmoz";
+    s_265.pageName=pageName;
+    s_265.channel="us.dmozodp";
+    s_265.linkInternalFilters="javascript:,dmoz.org";
+    s_265.prop1="docs";
+    s_265.prop2="depth : NA";
+    s_265.prop16="en";
+    s_265.prop54="no_cms";
+    s_265.prop62="video_novideo";
+    s_265.prop65="original_content";
+    s_265.mmxgo=true;
+
+    var s_code=s_265.t();
+  }
+
+  s_265_account ="aolsvc";
+
+  (function(){
+    var d = document, s = d.createElement('script');
+    s.type = 'text/javascript';
+    s.src = (location.protocol == 'https:' ? 'https://s' : 'http://o') + '.aolcdn.com/os_merge/?file=/aol/beacon.min.js&file=/aol/omniture.min.js';
+    d.getElementsByTagName('head')[0].appendChild(s);
+  })();
+</script>
+
+</body>
+</html>

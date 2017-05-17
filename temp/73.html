@@ -1,0 +1,174 @@
+<!-- https://pubs.aaas.org/MembershipRenewal/new_ren_setup_rd.asp?dmc=R7BXUW -->
+<!DOCTYPE html>
+<html lang="en">  
+
+<head>
+    <title>AAAS Membership Renewal  - X</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/eCommerce/JQuery/jquery-1.7.1.js"></script>
+    <script src="/eCommerce_reSkin/js/data_format.js"></script>
+    <script src="/eCommerce_reSkin/js/payCard.js"></script>
+    <link rel="stylesheet" href="/eCommerce_reSkin/styles/bootstrap.css">
+    <link rel="stylesheet" href="/eCommerce_reSkin/styles/pubs_newskin.css">
+    <link rel="stylesheet" href="/eCommerce_reSkin/styles/wrapper.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" data-noprefix>
+    <script src="//assets.adobedtm.com/926659a1689cc9fca96760b67cca714ae48f0584/satelliteLib-391e8707cf6b544a98cba512920e6bfc7edbb51b.js"></script>
+
+    <input type="hidden" name="AUT" id="AUT" value="20"><input type="hidden" name="BEL" id="BEL" value="21"><input type="hidden" name="BGR" id="BGR" value="20"><input type="hidden" name="CYP" id="CYP" value="19"><input type="hidden" name="CZR" id="CZR" value="21"><input type="hidden" name="DEU" id="DEU" value="19"><input type="hidden" name="DNK" id="DNK" value="25"><input type="hidden" name="ESP" id="ESP" value="21"><input type="hidden" name="EST" id="EST" value="20"><input type="hidden" name="FIN" id="FIN" value="24"><input type="hidden" name="FRA" id="FRA" value="2.1"><input type="hidden" name="GBR" id="GBR" value="20"><input type="hidden" name="GRC" id="GRC" value="24"><input type="hidden" name="HRV" id="HRV" value="25"><input type="hidden" name="HUN" id="HUN" value="27"><input type="hidden" name="IRL" id="IRL" value="23"><input type="hidden" name="ITA" id="ITA" value="4"><input type="hidden" name="JPN" id="JPN" value="8"><input type="hidden" name="KOR" id="KOR" value="0"><input type="hidden" name="LTU" id="LTU" value="21"><input type="hidden" name="LUX" id="LUX" value="17"><input type="hidden" name="LVA" id="LVA" value="21"><input type="hidden" name="MLT" id="MLT" value="18"><input type="hidden" name="NLD" id="NLD" value="21"><input type="hidden" name="NOR" id="NOR" value="0"><input type="hidden" name="POL" id="POL" value="23"><input type="hidden" name="POR" id="POR" value="23"><input type="hidden" name="ROM" id="ROM" value="19"><input type="hidden" name="SVK" id="SVK" value="20"><input type="hidden" name="SVN" id="SVN" value="22"><input type="hidden" name="SWE" id="SWE" value="25"><input type="hidden" name="ZAF" id="ZAF" value="14"><input type="hidden" name="CAN" id="CAN" value="5">
+<script language="javascript">
+    function set_vat(myPrice) {
+        var myCharge;
+        var countrySelected;
+       
+        if (arguments.length == 1) {
+            myCharge = myPrice;
+            countrySelected = document.getElementById("intCountry").value.trim();
+        }
+        else {
+            myCharge = document.getElementById("inteDigitalRate") != null ? document.getElementById("inteDigitalRate").value.trim() : "";
+            var country = document.getElementById("intCountry");
+            countrySelected = country.options[country.selectedIndex].value;
+        }
+
+        if (countrySelected == "" || myCharge == "")
+            return;
+
+        if (document.getElementById(countrySelected) !== null)
+        {
+            var vat = (document.getElementById(countrySelected).value/100);
+            // vat = .20;
+            document.subscription_step_2.VATFlag.value = "YES";   
+        }
+        else {
+            vat = 0;
+        }
+
+        var subAmoung = document.getElementById("sub_amount");
+        var vatAmount = document.getElementById("vat_amount");
+        var totalAmount = document.getElementById("total_amount");
+        var vatTotal = document.getElementById("VATtotal");
+
+        subAmoung.value = Number(myCharge).toFixed(2);
+        vatAmount.value = (Math.round((Number(myCharge) * vat) * 100) / 100).toFixed(2);
+        vatTotal.value = (Number(subAmoung.value) + Number(vatAmount.value)).toFixed(2);
+        totalAmount.value = (Number(subAmoung.value) + Number(vatAmount.value)).toFixed(2);
+       // totalAmount.value = (Math.round((Number(myCharge) * (1 + vat)) * 100) / 100).toFixed(2);
+       // vatTotal.value = (Math.round((Number(myCharge) * (1 + vat)) * 100) / 100).toFixed(2);
+    }
+</script>
+
+</head>
+<body>
+    <div class="container-top" style="outline-color:;">
+        
+
+        <div id="header" class="container-fluid text-center top-image">
+            <div class="row" style="overflow:hidden;">
+                <img src="https://secure.aaas.org/promo/images/pubs/AAAS-topbanner.jpg">
+            </div>
+
+            <div class="row well" style="background:;">
+                <div class="col-xs-12 col-sm-6">
+                    <p class="text-left">
+                        <html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3 class="text-left"><strong>Renew Your AAAS Membership and <em>Science</em> subscription</strong></h3>
+
+<p class="text-left">The American Association for the Advancement of Science (AAAS) is the world&#39;s most trusted resource for science across disciplines and a leader in empowering scientific information in the public sphere.</p>
+
+<p class="text-left">By renewing, you are bridging a gap between science and society. You are strengthening an organization that develops evidence-based policy making, enhances science education, and communicates unbiased science to the public.</p>
+</body>
+</html>
+
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 side-image">
+                    <img src="https://secure.aaas.org/promo/images/pubs/Stand With Us 2-Capitol.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+
+
+
+
+
+
+    <form onSubmit="return ResetForm(this)" action="new_ren_setup_rd.asp" method="post" id="subscription_step_2" name="subscription_step_2">
+
+    <div class="well center-block">
+    <div class="form-group">
+        <p>
+            
+        </p>
+        <label class="exampleInputEmail2 pubs-required"> Member Number</label>
+        <input name="membership" id="aaas_number" type="text" size="8" maxlength="8" required="required" value="" />
+        <a href="https://www.sciencemag.org/subscribe/forgot-your-aaas-number" class="LinkHelp text-nowrap" target="_blank">Forgot your Number?</a>
+    </div>
+</div>
+
+
+<p class="text-center"><button type="submit" class="btn btn-warning btn-lg col-lg-pull-10 btn-go" id="submitOrder">Continue</button></p>
+<div class="well center-block">
+    <h4>Need help?</h4>
+    <p>Please contact  MemberCentral Support with any questions, including changes to your membership or <i>Science</i> subscription. You can reach us via email at <a href='mailto:membership@aaas.org'>membership@aaas.org</a> or by phone at 1-202-326-6417 or toll free in the United States at 866-434-2227 weekdays between the hours of 8:30 am ET and 5:00 pm ET.</p>
+</div>
+
+			
+			<input TYPE="hidden" NAME="Setup" VALUE="Y">
+			<input TYPE="hidden" NAME="effort" VALUE="">
+			<input TYPE="hidden" NAME="p" VALUE="">
+			<input TYPE="hidden" NAME="effortNumber" VALUE="">	
+			<input TYPE="hidden" NAME="dmcSource" VALUE="">		
+			<input TYPE="hidden" NAME="renewal" VALUE="YES">
+			<input TYPE="hidden" NAME="st" VALUE="Y">
+			<input TYPE="hidden" NAME="source_code" VALUE="">
+			<input type="hidden" name="PNDues" value="">
+			<input TYPE="hidden" NAME="discount" VALUE="">
+			<input TYPE="hidden" NAME="ship_code" VALUE="">
+            <input type="hidden" name="referral" value="">
+            <input type="hidden" name="arl" value="">
+            <input type="hidden" name="responseCode" value="">
+            <input TYPE="hidden" NAME="mem" VALUE="">
+            <input type="hidden" name="lsatEffortNumber" value="">
+
+            <input type="hidden" name="renewalDefaultMessaging" value="">
+            <input type="hidden" name="premiumKey" value="">
+            <input type="hidden" name="premiumOption" id="premiumOption" value="">
+    </form>
+
+<script type="text/javascript">
+digitalData={
+"page":{
+"pageInfo":{
+"pageID":"Pubs Renew 1"
+},
+"category":{
+"primarycategory":"Renew",
+"pageType":"Individual"
+},
+"attributes":{
+"promocode":"R7BXUW"
+}
+},
+"transaction":{
+"transactionID":"",
+"total":{
+"totalPrice":""
+}
+}
+};
+</script>
+
+
+        </div>
+    </div>
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!-- http://www.w3schools.com/ -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=true;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function g(a,b,g,h,j,k,l,m){var n=new f.file(a,b,g,h,j,k,l);!0===m?d[a]=n:e[a]=n,c[a]=n,i(n)}function h(a,g,h,j,k,l,m,n,o){!0===l&&(a=a+"_"+b++);var p=new f.func(a,g,h,j,k,m,n);!0===o?d[a]=p:e[a]=p,c[a]=p,i(p)}function i(a){!0!==j(a)&&a.process()}function j(a){if(a.blockedBy instanceof Array)for(var b=0;b<a.blockedBy.length;b++){var d=a.blockedBy[b];if(!1===c.hasOwnProperty(d))return k(a.name+" blocked = "+d),!0;if(!0===a.proceedIfError&&!0===c[d].isError)return!1;if(!1===c[d].isComplete)return k(a.name+" blocked = "+d),!0}return!1}function k(a){var b=window.location.href,c=new RegExp("[?&]ezq=([^&#]*)","i"),d=c.exec(b);"1"===(d?d[1]:null)&&console.debug(a)}function l(){++a>20||(k("let's go"),m(d),m(e))}function m(a){for(var b in a)if(!1!==a.hasOwnProperty(b)){var c=a[b];!0===c.isComplete||j(c)||!0===c.isInitialized||!0===c.isError?!0===c.isError?k(c.name+": error"):!0===c.isComplete?k(c.name+": complete already"):!0===c.isInitialized&&k(c.name+": initialized already"):c.process()}}var a=0,b=0,c=[],d=[],e=[],f={func:function(a,b,d,e,f,g,h){var i=this;this.name=a,this.funcName=b,this.parameters=null===d?null:d instanceof Array?d:[d],this.isBlock=e,this.blockedBy=f,this.deleteWhenComplete=g,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=h,this.process=function(){k("... func = "+a),i.isInitialized=!0,i.isComplete=!0;var b=i.funcName.split(".");b.length>3||(3===b.length?window[b[0]][b[1]][b[2]].apply(null,this.parameters):2===b.length?window[b[0]][b[1]].apply(null,this.parameters):window[i.funcName].apply(null,this.parameters)),!0===i.deleteWhenComplete&&delete c[a],!0===i.isBlock&&(k("----- F'D: "+i.name),l())}},file:function(a,b,c,d,e,f,g){var h=this;this.name=a,this.path=b,this.async=e,this.defer=f,this.isBlock=c,this.blockedBy=d,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=g,this.process=function(){h.isInitialized=!0,k("... file = "+a);var c=document.createElement("script");c.src=b,!0===e?c.async=!0:!0===f&&(c.defer=!0),c.onerror=function(){k("----- ERR'D: "+h.name),h.isError=!0,!0===h.isBlock&&l()},c.onreadystatechange=c.onload=function(){var a=c.readyState;k("----- F'D: "+h.name),a&&!/loaded|complete/.test(a)||(h.isComplete=!0,!0===h.isBlock&&l())},document.getElementsByTagName("head")[0].appendChild(c)}}};return{addFile:g,addFunc:h,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:__ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+<title>W3Schools Online Web Tutorials</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,DOM,jQuery,PHP,SQL,XML,Bootstrap,Web,W3CSS,W3C,tutorials,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,colors,demos,tips,w3c">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="w3css/3/w3.css">
+<script>
+(function() {
+var cx = '012971019331610648934:m2tou3_miwy';
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = 'https://www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<style>
+/* W3Schools Font Logo */
+.w3schools-logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:relative;
+}
+.w3schools-logo .dotcom {color:#4CAF50;}
+@font-face {
+font-family:'fontawesome';
+src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'),
+url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+font-style:normal;
+}
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:20px;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0,0);
+}
+.fa-home:before {content:'\e800';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+/* Google */
+#nav_translate, #nav_search {display:none;}
+#nav_translate a {display:inline;}
+#googleSearch {color:#000000;}
+.searchdiv {
+max-width:400px;
+margin:auto;
+text-align:left;
+font-size:16px;
+}
+div.cse .gsc-control-cse, div.gsc-control-cse {
+background-color:transparent;
+border:none;
+padding:0px;
+margin:0px;
+}
+td.gsc-search-button input.gsc-search-button {background-color:#555555;border-color:#555555;}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
+box-sizing:content-box;
+line-height:normal;
+}
+.gsc-tabsArea div {overflow:visible;}
+.gsst_a .gscb_a {margin-top:3px;}
+/* Customize W3.CSS */
+.w3-dropnav {
+display:none;
+padding-bottom:40px;
+position:absolute;
+width:100%;
+z-index:99 !important;
+}
+.w3-col .w3-btn {
+margin:5px 5px 5px 0;
+font-size:16px;
+}
+.w3-col.l4 .w3-card-2 {
+padding:15px 10px;
+height:260px;
+}
+.w3-closebtn {
+padding:10px 20px !important;
+position:absolute;
+right:0;
+}
+.w3-closebtn:hover {background-color:#cccccc;}
+.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
+.w3-accordion-content .w3-closebtn{display:none;}
+.w3-main {margin-left:230px;}
+.w3-sidenav {
+z-index:3;
+width:230px;
+overflow:hidden !important;
+position:absolute !important;
+margin-bottom:-155px;
+}
+.w3-sidenav a {
+padding:0 16px;
+font-size:16px;
+}
+.w3-navbar {
+position:relative;
+z-index:4;
+font-size:17px;
+}
+h1 {
+font-size:80px;
+color:#555555;
+margin:2px 0 -20px 0 !important;
+}
+@media screen and (min-width:769px){.w3-sidenav.w3-collapse{display:block !important;}}
+@media screen and (min-width:769px){.w3-opennav,.w3-accordion{display:none !important;}}
+@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}}
+@media screen and (max-width:768px){.w3-sidenav.w3-collapse,.navbarbtns,.navex{display:none !important;}h1,.w3-jumbo{font-size:60px !important;}.w3-padding-jumbo{padding:32px !important;}}
+</style>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel='canonical' href='https://www.w3schools.com/' />
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-80950036-41";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-80950036-41']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'w3schools.com']);
+_gaq.push(['f._setDomainName', 'w3schools.com']);
+_gaq.push(['e._setCustomVar',1,'template','old_site_excl',3]);
+_gaq.push(['e._setCustomVar',2,'t','131',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod2',3]);
+_gaq.push(['f._setSampleRate', '5']);
+_gaq.push(['e._setSampleRate', '5']);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','old_site_excl',3]);
+_gaq.push(['f._setCustomVar',2,'domain','w3schools.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "478319597";</script><base href="https://www.w3schools.com/">
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod2","ab_test_val":"","adgroup_rank_id":-1,"browser":"Unknown","browser_version":0,"country":"EG","device_height":528,"device_width":1280,"domain_id":34890,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"ip":"45.243.2.10","landing_page_url":"https://www.w3schools.com/","os":"Unknown","page_ad_positions":"","page_view_id":"a450f66c-9cd7-4798-411c-d1540ea4af0b","pv_event_count":0,"referrer_id":0,"region":"us-east-1","serverid":"54.90.110.180:9504","t_epoch":1492869715,"template_id":131,"time_on_site_visit":0,"url":"https://www.w3schools.com/","user_agent":"Python-urllib/1.17","user_id":478319597,"visit_id":1460788965,"visit_uuid":"ac1cb213-e96d-44ae-49a3-b61137698b8b"};var _ezExtraQueries = "&ez_orig=1";</script><script data-cfasync='false' type="text/javascript" src="/detroitchicago/rochester.js?cb=157-3&v=7" async></script></head>
+<body style="position:relative;min-height:100%;">
+
+<div class="w3-row w3-white w3-padding w3-hide-medium w3-hide-small" style="margin-top:5px;">
+ <div class="w3-half" style="margin:4px 0 6px 0"><a class='w3schools-logo' href='//www.w3schools.com'>w3schools<span class='dotcom'>.com</span></a></div>
+ <div class="w3-half w3-margin-top w3-wide w3-hide-medium w3-hide-small">
+  <div class="w3-right" style="position:relative;top:5px;">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+ </div>
+</div>
+
+<div class="w3-hide-large w3-hide-large w3-padding-12" style="margin-top:8px;">
+ <div class="w3-center"><a class='w3schools-logo' href='//www.w3schools.com'>w3schools<span class='dotcom'>.com</span></a></div>
+ <div class="w3-center w3-wide w3-hide-small" style="margin:14px 0 -5px 0">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+</div>
+
+<div style='display:none;position:absolute;z-index:6;right:60px;height:57px;padding-top:12px;padding-right:20px;background-color:#4CAF50;' id='googleSearch'><div class='gcse-search'></div></div>
+<div style='display:none;position:absolute;z-index:5;right:120px;height:57px;background-color:#4CAF50;text-align:right;padding-top:15px;' id='google_translate_element'></div>
+
+<ul class="w3-navbar w3-theme w3-card-2 w3-wide">
+ <li class="w3-opennav">
+  <a class="w3-hover-white w3-theme w3-padding-16" href="javascript:void(0)" onclick="w3_open()">&#9776;</a>
+ </li>
+ <li class="navbarbtns"><a class="w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">TUTORIALS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a></li>
+ <li class="navbarbtns"><a class="w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a></li>
+ <li class="navbarbtns"><a class="w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">EXAMPLES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a></li>
+ <li class="w3-right"><a class="w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="open_search(this)" title='Search W3Schools'><i class='fa'>&#xe802;</i></a></li>
+ <li class="w3-right"><a class="w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="open_translate(this)" title='Translate W3Schools'><i class='fa'>&#xe801;</i></a></li>
+</ul>
+
+<nav class="w3-sidenav w3-collapse w3-white w3-card-2" id="mySidenav">
+ <div class="w3-container w3-padding-top">
+  <h4>HTML and CSS</h4>
+ </div>
+ <a href="/html/default.asp">Learn HTML</a>
+ <a href="/css/default.asp">Learn CSS</a>
+ <a href="/w3css/default.asp">Learn W3.CSS</a>
+ <a href="/colors/default.asp">Learn Colors</a>
+ <a href="/bootstrap/default.asp">Learn Bootstrap</a>
+ <a href="/icons/default.asp">Learn Icons</a>
+ <a href="/graphics/default.asp">Learn Graphics</a>
+ <a href="/howto/default.asp">Learn How To</a>
+ <div class="w3-container w3-padding-top">
+  <h4>JavaScript</h4>
+ </div>
+ <a href="/js/default.asp">Learn JavaScript</a>
+ <a href="/w3js/default.asp">Learn W3.JS</a>
+ <a href="/jquery/default.asp">Learn jQuery</a>
+ <a href="/jquerymobile/default.asp">Learn jQueryMobile</a>
+ <a href="/appml/default.asp">Learn AppML</a>
+ <a href="/angular/default.asp">Learn AngularJS</a>
+ <a href="/js/js_json_intro.asp">Learn JSON</a>
+ <a href="/js/js_ajax_intro.asp">Learn AJAX</a>
+ <div class="w3-container w3-padding-top">
+  <h4>Server Side</h4>
+ </div>
+ <a href="/sql/default.asp">Learn SQL</a>
+ <a href="/php/default.asp">Learn PHP</a>
+ <a href='/asp/default.asp'>Learn ASP</a>
+ <div class="w3-container w3-padding-top">
+  <h4>Web Building</h4>
+ </div>
+ <a href="/w3css/w3css_templates.asp">Web Templates</a>
+ <a href="/browsers/default.asp">Web Statistics</a>
+ <a href="/cert/default.asp">Web Certificates</a>
+ <div class="w3-container w3-padding-top">
+  <h4>XML Tutorials</h4>
+ </div>
+ <a href="/xml/default.asp">Learn XML</a>
+ <a href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+ <a href="/xml/dom_intro.asp">Learn XML DOM</a>
+ <a href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+ <a href='/xml/schema_intro.asp'>Learn XML Schema</a>
+ <a href="/xml/xsl_intro.asp">Learn XSLT</a>
+ <a href='/xml/xpath_intro.asp'>Learn XPath</a>
+ <a href='/xml/xquery_intro.asp'>Learn XQuery</a>
+</nav>
+
+<div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large w3-accordion" style="display:none;cursor:default">
+ <a href="javascript:void(0)" onclick="w3_close()" class="w3-closebtn w3-xlarge w3-margin-0">&times;</a><br>
+ <div class="w3-container w3-padding-32">
+  <a class="w3-btn-block w3-light-grey w3-large w3-wide w3-hover-none w3-hover-opacity" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">TUTORIALS <i class='fa fa-caret-down'></i></a>
+  <div id="sectionxs_tutorials" class="w3-white w3-accordion-content w3-show"></div>
+  <a class="w3-btn-block w3-light-grey w3-large w3-wide w3-hover-none w3-hover-opacity" onclick="open_xs_menu('references')" href="javascript:void(0);">REFERENCES <i class='fa fa-caret-down'></i></a>
+  <div id="sectionxs_references" class="w3-white w3-accordion-content w3-show"></div>
+  <a class="w3-btn-block w3-light-grey w3-large w3-wide w3-hover-none w3-hover-opacity" onclick="open_xs_menu('examples')" href="javascript:void(0);">EXAMPLES <i class='fa fa-caret-down'></i></a>
+  <div id="sectionxs_examples" class="w3-white w3-accordion-content w3-show"></div>
+ </div>
+</div>
+
+<nav id="nav_tutorials" class="w3-dropnav w3-light-grey w3-card-2 w3-hide-small navex">
+ <span onclick="w3_close_nav('tutorials')" class="w3-closebtn w3-xlarge">&times;</span><br>
+ <div class="w3-row-padding w3-padding-bottom">
+  <div class="w3-col l3 m6">
+   <h3>HTML and CSS</h3>
+   <a href="/html/default.asp">Learn HTML</a>
+   <a href="/css/default.asp">Learn CSS</a>
+   <a href="/w3css/default.asp">Learn W3.CSS</a>
+   <a href="/colors/default.asp">Learn Colors</a>
+   <a href="/bootstrap/default.asp">Learn Bootstrap</a>
+   <a href="/icons/default.asp">Learn Icons</a>
+   <a href="/graphics/default.asp">Learn Graphics</a>
+   <a href="/howto/default.asp">Learn How To</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3>JavaScript</h3>
+   <a href="/js/default.asp">Learn JavaScript</a>
+   <a href="/w3js/default.asp">Learn W3.JS</a>
+   <a href="/jquery/default.asp">Learn jQuery</a>
+   <a href="/jquerymobile/default.asp">Learn jQueryMobile</a>
+   <a href="/appml/default.asp">Learn AppML</a>
+   <a href="/angular/default.asp">Learn AngularJS</a>
+   <a href="/js/js_json_intro.asp">Learn JSON</a>
+   <a href="/js/js_ajax_intro.asp">Learn AJAX</a>
+   <div class="w3-hide-small"><br><br></div>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3>Server Side</h3>
+   <a href="/sql/default.asp">Learn SQL</a>
+   <a href="/php/default.asp">Learn PHP</a>
+   <a href='/asp/default.asp'>Learn ASP</a>
+   <h3>Web Building</h3>
+   <a href="/w3css/w3css_templates.asp">Web Templates</a>
+   <a href="/browsers/default.asp">Web Statistics</a>
+   <a href="/cert/default.asp">Web Certificates</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3>XML Tutorials</h3>
+   <a href="/xml/default.asp">Learn XML</a>
+   <a href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+   <a href="/xml/dom_intro.asp">Learn XML DOM</a>
+   <a href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a href="/xml/xsl_intro.asp">Learn XSLT</a>
+   <a href='/xml/xpath_intro.asp'>Learn XPath</a>
+   <a href='/xml/xquery_intro.asp'>Learn XQuery</a>
+  </div>
+ </div>
+</nav>
+
+<nav id="nav_references" class="w3-dropnav w3-light-grey w3-card-2 w3-hide-small navex">
+ <span onclick="w3_close_nav('references')" class="w3-closebtn w3-xlarge">&times;</span><br>
+ <div class="w3-row-padding w3-padding-bottom">
+  <div class="w3-col m4">
+   <h3>HTML</h3>
+   <a href='/tags/default.asp'>HTML Tag Reference</a>
+   <a href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+   <a href='/colors/default.asp'>HTML Color Reference</a>
+   <a href='/tags/ref_attributes.asp'>HTML Attribute Reference</a>
+   <a href='/tags/ref_canvas.asp'>HTML Canvas Reference</a>
+   <a href='/graphics/svg_reference.asp'>HTML SVG Reference</a>
+   <a href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+   <h3>CSS</h3>
+   <a href='/cssref/default.asp'>CSS Reference</a>
+   <a href='/cssref/css_selectors.asp'>CSS Selector Reference</a>
+   <a href='/w3css/w3css_references.asp'>W3.CSS Reference</a>
+   <a href='/bootstrap/bootstrap_ref_all_classes.asp'>Bootstrap Reference</a>
+   <a href='/icons/icons_reference.asp'>Icon Reference</a>
+  </div>
+  <div class="w3-col m4">
+   <h3>JavaScript</h3>
+   <a href='/jsref/default.asp'>JavaScript Reference</a>
+   <a href='/jsref/default.asp'>HTML DOM Reference</a>
+   <a href="/w3js/w3js_references.asp">W3.JS Reference</a>
+   <a href='/jquery/jquery_ref_selectors.asp'>jQuery Reference</a>
+   <a href='/jquerymobile/jquerymobile_ref_data.asp'>jQuery Mobile Reference</a>
+   <a href='/angular/angular_ref_directives.asp'>AngularJS Reference</a>
+   <h3>XML</h3>
+   <a href='/xml/dom_nodetype.asp'>XML DOM Reference</a>
+   <a href='/xml/dom_http.asp'>XML Http Reference</a>
+   <a href='/xml/xsl_elementref.asp'>XSLT Reference</a>
+   <a href='/xml/schema_elements_ref.asp'>XML Schema Reference</a>
+
+  </div>
+  <div class="w3-col m4">
+   <h3>Character Sets</h3>
+   <a href='/charsets/default.asp'>HTML Character Sets</a>
+   <a href='/charsets/ref_html_ascii.asp'>HTML ASCII</a>
+   <a href='/charsets/ref_html_ansi.asp'>HTML ANSI</a>
+   <a href='/charsets/ref_html_ansi.asp'>HTML Windows-1252</a>
+   <a href='/charsets/ref_html_8859.asp'>HTML ISO-8859-1</a>
+   <a href='/charsets/ref_html_symbols.asp'>HTML Symbols</a>
+   <a href='/charsets/ref_html_utf8.asp'>HTML UTF-8</a>
+   <h3>Server Side</h3>
+   <a href='/php/php_ref_array.asp'>PHP Reference</a>
+   <a href='/sql/sql_quickref.asp'>SQL Reference</a>
+   <a href='/asp/asp_ref_response.asp'>ASP Reference</a>
+  </div>
+ </div>
+</nav>
+
+<nav id="nav_examples" class="w3-dropnav w3-light-grey w3-card-2 w3-hide-small navex">
+ <span onclick="w3_close_nav('examples')" class="w3-closebtn w3-xlarge">&times;</span><br>
+ <div class="w3-row-padding w3-padding-bottom">
+  <div class="w3-col l3 m6">
+   <h3>HTML and CSS</h3>
+   <a href='/html/html_examples.asp'>HTML Examples</a>
+   <a href='/css/css_examples.asp'>CSS Examples</a>
+   <a href='/w3css/w3css_examples.asp'>W3.CSS Examples</a>
+   <a href='/w3css/w3css_templates.asp'>W3.CSS Templates</a>
+   <a href='/bootstrap/bootstrap_examples.asp'>Bootstrap Examples</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3>JavaScript</h3>
+   <a href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
+   <a href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
+   <a href="/w3js/w3js_examples.asp">W3.JS Examples</a>
+   <a href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
+   <a href="/jquerymobile/jquerymobile_examples.asp" target="_top">jQuery Mobile Examples</a>
+   <a href="/angular/angular_examples.asp" target="_top">AngularJS Examples</a>
+   <a href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3>XML</h3>
+   <a href="/xml/xml_examples.asp" target="_top">XML Examples</a>
+   <a href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
+   <a href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
+   <a href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+   <a href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
+   <a href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
+   <h3>Server Side</h3>
+   <a href="/php/php_examples.asp" target="_top">PHP Examples</a>
+   <a href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
+  </div>
+  <div class="w3-col l3 m6"><h3>Quizzes</h3>
+   <a href="/quiztest/quiztest.asp?Qtest=HTML" target="_top">HTML Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=CSS" target="_top">CSS Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=JavaScript" target="_top">JavaScript Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=Bootstrap" target="_top">Bootstrap Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=jQuery" target="_top">jQuery Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=PHP" target="_top">PHP Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=SQL" target="_top">SQL Quiz</a>
+   <a href="/quiztest/quiztest.asp?Qtest=XML" target="_top">XML Quiz</a>
+  </div>
+</div>
+</nav>
+
+<!-- MAIN -->
+<div class="w3-main">
+
+<div class="w3-row w3-margin-bottom">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>HTML</h1>
+  <p class="w3-xlarge w3-text-dark-grey">The language for building web pages</p>
+  <a href="/html/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN HTML</a>
+  <a href="/tags/default.asp" class="w3-btn w3-dark-grey w3-padding">HTML REFERENCE</a>
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-example w3-padding-16 w3-margin-0 w3-hide-small">
+   <h4>HTML Example:</h4>
+   <div class="w3-code htmlHigh notranslate w3-border-green">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+   </div>
+   <a href="/html/tryit.asp?filename=tryhtml_default" target="_blank" class="w3-btn w3-theme w3-margin-0">Try it Yourself &raquo;</a>
+  </div>
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-hide-medium w3-hide-small">
+ <div class="w3-col l6" style="padding-top:40px;padding:3%;">
+  <h4>CSS Example:</h4>
+  <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
+body {<br>
+&nbsp;&nbsp;&nbsp; background-color: lightblue;<br>}<br>
+h1 {<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>}<br>
+p {<br>
+&nbsp;&nbsp;&nbsp; font-family: verdana;<br>
+&nbsp;&nbsp;&nbsp; font-size: 20px;<br>}
+  </div>
+  <a href="/css/tryit.asp?filename=trycss_default" target="_blank" class="w3-btn w3-theme w3-margin-0">Try it Yourself &raquo;</a>
+ </div>
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>CSS</h1>
+  <p class="w3-xlarge">The language for styling web pages</p>
+  <a href="/css/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN CSS</a>
+  <a href="/cssref/default.asp" class="w3-btn w3-dark-grey w3-padding">CSS REFERENCE</a>
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-hide-large" style="padding-bottom:30px">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1>CSS</h1>
+  <p class="w3-xlarge">The language for styling web pages</p>
+  <a href="/css/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN CSS</a>
+  <a href="/cssref/default.asp" class="w3-btn w3-dark-grey w3-padding">CSS REFERENCE</a>
+ </div>
+ <div class="w3-col l6 w3-hide-small" style="padding-top:40px;padding:3%;">
+  <h4>CSS Example:</h4>
+  <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
+body {<br>
+&nbsp;&nbsp;&nbsp; background-color: lightblue;<br>}<br>
+h1 {<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>}<br>
+p {<br>
+&nbsp;&nbsp;&nbsp; font-family: verdana;<br>
+&nbsp;&nbsp;&nbsp; font-size: 20px;<br>}
+  </div>
+  <a href="/css/tryit.asp?filename=trycss_default" target="_blank" class="w3-btn w3-theme w3-margin-0">Try it Yourself &raquo;</a>
+ </div>
+</div>
+
+<div class="w3-row">
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 class="w3-jumbo">JavaScript</h1>
+  <p class="w3-xlarge w3-text-dark-grey">The language for programming web pages</p>
+  <a href="/js/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN JAVASCRIPT</a>
+  <a href="/jsref/default.asp" class="w3-btn w3-dark-grey w3-padding">JAVASCRIPT REFERENCE</a>
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-example w3-padding-16 w3-margin-0 w3-hide-small">
+   <h4>JavaScript Example:</h4>
+   <div class="w3-code notranslate w3-border-green">
+   <div class="htmlHigh">
+&lt;script&gt;
+   </div>
+   <div class="jsHigh">
+function myFunction() {<br>
+&nbsp;&nbsp;&nbsp; var x = document.getElementById(&quot;demo&quot;);<br>
+&nbsp;&nbsp;&nbsp; x.style.fontSize = &quot;25px&quot;; <br>
+&nbsp;&nbsp;&nbsp; x.style.color = &quot;red&quot;; <br>}<br>
+    </div>
+    <div class="htmlHigh">
+&lt;/script&gt;<br><br>
+&lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;
+    </div>
+   </div>
+   <a href="/js/tryit.asp?filename=tryjs_default" target="_blank" class="w3-btn w3-theme w3-margin-0">Try it Yourself &raquo;</a>
+  </div>
+ </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-padding-12">
+ <div class="w3-col l4 w3-center" style="padding:3%;">
+  <div class="w3-card-2 w3-white">
+   <h2 class="w3-xxlarge">SQL</h2>
+   <h4 class="w3-text-dark-grey">A language for accessing databases</h4>
+   <a href="/sql/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN SQL</a>
+  </div>
+ </div>
+ <div class="w3-col l4 w3-center" style="padding:3%;">
+  <div class="w3-card-2 w3-white">
+   <h2 class="w3-xxlarge">PHP</h2>
+   <h4 class="w3-text-dark-grey">A web server programming language</h4>
+   <a href="/php/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN PHP</a>
+  </div>
+ </div>
+ <div class="w3-col l4 w3-center" style="padding:3%;">
+  <div class="w3-card-2 w3-white">
+   <h2 class="w3-xxlarge">jQuery</h2>
+   <h4 class="w3-text-dark-grey">A JavaScript library for developing web pages</h4>
+   <a href="/jquery/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN JQUERY</a>
+  </div>
+ </div>
+</div>
+<div class="w3-row">
+ <div class="w3-col l4 w3-center" style="padding:3%;">
+  <h2 class="w3-xxlarge">W3.CSS</h2>
+  <h4 class="w3-text-dark-grey">A modern CSS framework for faster and better responsive web sites</h4>
+  <a href="/w3css/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN W3.CSS</a>
+ </div>
+ <div class="w3-col l4 w3-center" style="padding:3%;">
+  <h2 class="w3-xxlarge">Color Picker</h2>
+  <a href="/colors/colors_picker.asp" class="w3-hover-opacity"><img style="width:150px;height:128px;margin-top:16px;" src="/images/colorpicker.png" alt="Colorpicker"></a>
+ </div>
+ <div class="w3-col l4 w3-center" style="padding:3%;">
+  <h2 class="w3-xxlarge">Bootstrap</h2>
+  <h4 class="w3-text-dark-grey">Bootstrap is a CSS framework for designing better web pages</h4>
+  <a href="/bootstrap/default.asp" class="w3-btn w3-dark-grey w3-padding">LEARN BOOTSTRAP</a>
+ </div>
+</div>
+<br>
+
+<div class="w3-light-grey w3-center w3-padding-jumbo w3-padding-32">
+  <h2 class="w3-xxlarge">Web Templates</h2>
+  <h4 class="w3-text-dark-grey">Browse our selection of <strong>free</strong> responsive HTML Templates</h4>
+  <div class="w3-content">
+    <a href="/w3css/w3css_templates.asp"><img src="w3css_templates.jpg" style="width:100%;margin:32px 0" alt="W3.CSS Templates"></a>
+  </div>
+  <p><a href="/w3css/w3css_templates.asp" class="w3-btn w3-dark-grey w3-padding-large">BROWSE TEMPLATES</a></p>
+</div>
+
+<footer class="w3-container w3-dark-grey w3-center w3-padding-jumbo w3-padding-32">
+ <div class="w3-container w3-padding-32">
+   <a class="w3-btn w3-light-grey w3-hide-small w3-hide-medium w3-left w3-padding" href="/cert/default.asp" style="font-size:16px;margin-top:-9px">WEB CERTIFICATES</a>
+   <a class="w3-btn w3-light-grey w3-hide-large" href="/cert/default.asp" style="font-size:16px;margin-bottom:16px">WEB CERTIFICATES</a>
+   <nav class="w3-right w3-hide-medium w3-hide-small w3-wide">
+    <a href="/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none">FORUM</a> |
+    <a href="/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none">ABOUT</a>
+   </nav>
+   <nav class="w3-center w3-hide-large w3-margin-top w3-wide">
+    <a href="/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none">FORUM</a> |
+    <a href="/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none">ABOUT</a>
+   </nav>
+ </div>
+ <p class="w3-medium">
+ W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of
+ all content. While using this site, you agree to have read and accepted our <a href="/about/about_copyright.asp" class="w3-hover-text-green">terms of use</a>, <a href="/about/about_privacy.asp" class="w3-hover-text-green">cookie and privacy policy</a>.<br>
+ <a href="/about/about_copyright.asp" class="w3-hover-text-green">Copyright 1999-2017</a> by Refsnes Data. All Rights Reserved.<br><br></p>
+ <a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook" class="w3-hover-text-light-grey">
+ <i class="fa fa-thumbs-o-up w3-xxlarge"></i></a>
+ <div id="fblikeframe" class="w3-modal">
+  <div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div>
+ </div>
+</footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+function w3_open() {
+  var x = document.getElementById("myAccordion");
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+function w3_close() {
+  document.getElementById("myAccordion").style.display = "none";
+}
+function open_xs_menu(x) {
+  if (document.getElementById("sectionxs_" + x).innerHTML == "") {
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+  } else {
+    document.getElementById("sectionxs_" + x).innerHTML = "";
+  }
+}
+function w3_open_nav(x) {
+  if (document.getElementById("nav_" + x).style.display == "block") {
+    w3_close_nav(x);
+  } else {
+    w3_close_nav("tutorials");
+    w3_close_nav("references");
+    w3_close_nav("examples");
+    document.getElementById("nav_" + x).style.display = "block";
+    if (document.getElementById("navbtn_" + x)) {
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
+    } 
+    if (x == "search") {
+      if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
+    }
+  }
+}
+function w3_close_nav(x) {
+  document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("navbtn_" + x)) {
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "inline";
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
+  }
+}
+function open_translate(elmnt) {
+  var a = document.getElementById("google_translate_element");
+  if (a.style.display == "") {
+    a.style.display = "none";
+    elmnt.innerHTML = "<i class='fa'>&#xe801;</i>";
+  } else {
+    a.style.display = "";
+    if (window.innerWidth > 830) {
+      a.style.width = "20%";
+    } else {
+      a.style.width = "60%";
+    }
+    elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:21px;text-align:center;'>X</span>";
+  }
+}
+function open_search(elmnt) {
+  var a = document.getElementById("googleSearch");
+  document.getElementById("navbtn_tutorials").style.visibility = "visible";
+  if (a.style.display == "") {
+    a.style.display = "none";
+    elmnt.innerHTML = "<i class='fa'>&#xe802;</i>";    
+  } else {
+    a.style.display = "";  
+    if (window.innerWidth > 1000) {
+      a.style.width = "40%";
+    } else if (window.innerWidth >768) {
+      document.getElementById("navbtn_tutorials").style.visibility = "hidden";
+      a.style.width = "80%";    
+    } else {
+      a.style.width = "80%";
+    }
+    if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
+    elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:23px;text-align:center;'>X</span>";
+  }
+}
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+  pageLanguage: 'en',
+  autoDisplay: false,    
+  gaTrack: true,
+  gaId: 'UA-3855518-1',
+  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+function clickFBLike() {
+  document.getElementById("fblikeframe").style.display='block';
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-btn w3-dark-grey w3-hover-black'>Close</button>";
+}
+function hideFBLike() {
+  document.getElementById("fblikeframe").style.display='none';
+}
+</script>
+<script src="/lib/w3codecolor.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+w3CodeColor();
+</script>
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.w3schools_com,DomainId.34890"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.w3schools_com,DomainId.34890"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag--></body>
+</html>

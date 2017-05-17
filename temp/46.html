@@ -1,0 +1,470 @@
+<!-- http://science.sciencemag.org/user/login?destination=/front -->
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html>
+<html class="pl"
+  lang="en"
+  dir="ltr" version="HTML+RDFa+MathML 1.1"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#">
+    <link type="text/css" rel="stylesheet" href="https://d2ufo47lrtsv5s.cloudfront.net/sites/default/files/advagg_css/css__CIOdlg1mYW6I2CL644ICVLfmWtYsWcX-OiXP9U-sN4M__0K-CM7JHu8YHrllEehTHAPtvE5WlxMPrOHp6NNSIG8o__t29IFCDCtVm-RfLRDp5pVZaf19Q2NxpgaDhg8pLJfc0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/highwire/highwire/highwire.style.highwire.css?oobhtx" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d2ufo47lrtsv5s.cloudfront.net/sites/default/files/advagg_css/css__HMRx_mukOngGjG0c0GrxONQrqr5rRcWqxNKxQvJL2pc__sN9YQH6mzBCZnqpaIwC8F1fhg-IAUgpzbEfIGBgEAI0__t29IFCDCtVm-RfLRDp5pVZaf19Q2NxpgaDhg8pLJfc0.css" media="all" />
+    <title>Log in | Science</title>
+    <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//d2ufo47lrtsv5s.cloudfront.net" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="shortcut icon" href="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="/sites/all/themes/shared/science_jcore/js/modernizr.js?version=3.3.1"></script>
+    <script type="text/javascript" src="//assets.adobedtm.com/926659a1689cc9fca96760b67cca714ae48f0584/satelliteLib-a9d46808a35b7b8034adfab1d8207407222304d5.js"></script>
+    <link rel="preload" href="/sites/all/themes/shared/science_jcore/library/css/style-jcore.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="/sites/all/themes/shared/science_jcore/library/css/style-jcore.css">
+    </noscript>
+    <script id="loadcss">
+      /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+(function(w){
+  "use strict";
+  /* exported loadCSS */
+  var loadCSS = function( href, before, media ){
+    // Arguments explained:
+    // `href` [REQUIRED] is the URL for your CSS file.
+    // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+    // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+    var doc = w.document;
+    var ss = doc.createElement( "link" );
+    var ref;
+    if( before ){
+      ref = before;
+    }
+    else {
+      var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      ref = refs[ refs.length - 1];
+    }
+
+    var sheets = doc.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+    ss.media = "only x";
+
+    // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+    function ready( cb ){
+      if( doc.body ){
+        return cb();
+      }
+      setTimeout(function(){
+        ready( cb );
+      });
+    }
+    // Inject link
+      // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+    ready( function(){
+      ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+    });
+    // A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+    var onloadcssdefined = function( cb ){
+      var resolvedHref = ss.href;
+      var i = sheets.length;
+      while( i-- ){
+        if( sheets[ i ].href === resolvedHref ){
+          return cb();
+        }
+      }
+      setTimeout(function() {
+        onloadcssdefined( cb );
+      });
+    };
+
+    function loadCB(){
+      if( ss.addEventListener ){
+        ss.removeEventListener( "load", loadCB );
+      }
+      ss.media = media || "all";
+    }
+
+    // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+    if( ss.addEventListener ){
+      ss.addEventListener( "load", loadCB);
+    }
+    ss.onloadcssdefined = onloadcssdefined;
+    onloadcssdefined( loadCB );
+    return ss;
+  };
+  // commonjs
+  if( typeof exports !== "undefined" ){
+    exports.loadCSS = loadCSS;
+  }
+  else {
+    w.loadCSS = loadCSS;
+  }
+}( typeof global !== "undefined" ? global : this ));
+      /*! CSS rel=preload polyfill. Depends on loadCSS function. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT  */
+(function( w ){
+  // rel=preload support test
+  if( !w.loadCSS ){
+    return;
+  }
+  var rp = loadCSS.relpreload = {};
+  rp.support = function(){
+    try {
+      return w.document.createElement( "link" ).relList.supports( "preload" );
+    } catch (e) {
+      return false;
+    }
+  };
+
+  // loop preload links and fetch using loadCSS
+  rp.poly = function(){
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+        w.loadCSS( link.href, link );
+        link.rel = null;
+      }
+    }
+  };
+
+  // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+  if( !rp.support() ){
+    rp.poly();
+    var run = w.setInterval( rp.poly, 300 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        w.clearInterval( run );
+      } );
+    }
+    if( w.attachEvent ){
+      w.attachEvent( "onload", function(){
+        w.clearInterval( run );
+      } )
+    }
+  }
+}( this ));
+    </script>
+  </head>
+  <body class="not-front no-sidebars page-user page-user-login path-user-login"  id="page-top">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+        <header class="sticky-header sticky-header-is-hidden">
+  <div class="sticky-header__logo sticky-header--science">
+    <a href="/" class="sticky-header__link" data-icon-position="" data-hide-link-title="0"><img src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/images/logo-science.svg" alt="Science Logo" /></a>  </div>
+    <nav class="sticky-header__nav">
+    <ul class="sticky-header__navlist"><li class="sticky-header__navitem"><a href="http://www.sciencemag.org/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Home</a></li><li class="sticky-header__navitem"><a href="http://www.sciencemag.org/news" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">News</a></li><li class="sticky-header__navitem"><a href="http://www.sciencemag.org/journals" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="sci scitransmed sigtrans advances" data-icon-position="">Journals</a></li><li class="sticky-header__navitem"><a href="http://www.sciencemag.org/topics" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Topics</a></li><li class="sticky-header__navitem"><a href="http://www.sciencemag.org/careers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Careers</a></li></ul>  </nav>
+        <form class="highwire-quicksearch form-search--sticky form-inline" action="/user/login?destination=/front" method="post" id="highwire-search-quicksearch-form--2" accept-charset="UTF-8"><form class="highwire-quicksearch form-search--sticky form-inline" action="/user/login?destination=/front" method="post" id="highwire-search-quicksearch-form--2" accept-charset="UTF-8"><div class="field-container--inline">  <label class="element-invisible" for="edit-keywords--2">Search</label>
+ <input placeholder="Search" class="search-field form-text" type="text" id="edit-keywords--2" name="keywords" value="" maxlength="128" />
+<button data-font-icon="icon-search" data-icon-position="after" class="btn search-submit" type="submit" id="edit-submit--2" name="op" value="&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Search&lt;/span&gt;"><i class="fa fa-search"></i><span class="element-invisible">Search</span></button><input type="hidden" name="form_build_id" value="form-iwhm4ywu7hl7iXE7ksY7kExK0WIWSRltKyT3cz3a5Vs" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form" />
+</div></form></form>    <a href="#page-top" class="btn--uptoggle">
+    <i class="fa fa-long-arrow-up"></i>
+    <span class="element-invisible">Go to top of page</span>
+  </a>
+  <label class="menu-toggler__trigger" for="menu-toggler">
+    <i class="fa fa-bars"></i>
+    <span class="element-invisible">Toggle menu</span>
+  </label>
+</header>
+<input type="checkbox" id="menu-toggler" class="menu-toggler" />
+
+<header class="row row--header">
+  <div class="container container--header">
+      <div  class="region region-header-leaderboard header--leaderboard">
+    <div  class="leaderboard__banner" id="block-panels-mini-science-leaderboard-banner">
+      
+    <div id='aaas-oas_Top'></div></div><div  class="leaderboard__sitelicense" id="block-panels-mini-science-leaderboard-site-license">
+      
+    <div class="panel-pane pane-panels-mini pane-jnl-sci-uid-strng user-block">
+  
+        
+        <nav class="panel-pane pane-block pane-system-user-menu pane-system user-block__nav">
+  
+        
+      <ul><li class="active-trail"><a href="/user/login?destination=/front" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="active-trail active" data-icon-position="">Log in </a></li>
+<li><a href="http://www.sciencemag.org/subscribe/my-account" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">My account</a></li>
+<li><a href="http://www.sciencemag.org/about/contact-us" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Contact Us</a></li>
+</ul>  
+</nav>
+  
+</div>
+</div><div  class="leaderboard__promo" id="block-panels-mini-jnl-sci-promo-subscribe">
+      
+    <div class="promo-subscribe"><div class="promo__mag">
+  
+        
+      <div class="highwire-article-citation highwire-citation-type-highwire-issue" data-pisa="sci;356/6335" data-pisa-master="sci;356/6335" data-apath="/sci/356/6335.atom" id="sci3566335atom"><img class="promo__mag__cover" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/default/files/styles/sci_footer_promo_cover/public/externals/ac6497ca024088e696d301c97b487fde.gif?itok=aMtUu_4H" alt="Magazine Cover" /></div>  
+</div>
+<div class="panel-pane pane-block pane-menu-menu-subscribe pane-menu promo__offers">
+  
+        
+      <ul><li class="expanded"><h3><a href="https://www.aaas.org/membercentral/join-aaas?intcmp=science-headlink-join&amp;dmc=P6FODA" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Become a member</a></h3> <ul><li><a href="https://pubs.aaas.org/MembershipRenewal/new_ren_setup_rd.asp" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Renew my subscription</a></li>
+<li><a href="http://www.sciencemag.org/subscribe/get-our-newsletters" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Sign up for newsletters</a></li>
+</ul></li>
+</ul>  
+</div>
+</div></div>  </div>
+    <div  class="region region-header-primary header--primary">
+  <div class="header__header">
+    <div class="site-logo--header site-logo--science">
+      <a href="/" class="link--journal" data-icon-position="" data-hide-link-title="0"><img src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/images/logo-science.svg" alt="Science Logo" /></a>      <a href="http://aaas.org/" class="link--aaas" data-icon-position="" data-hide-link-title="0"><img class="logo--aaas" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/images/logo-aaas.svg" alt="AAAS Logo" /></a>    </div>
+    <div class="menu-toggler">.</div>
+  </div>
+      <div  class="header__aux" id="block-panels-mini-jnl-science-header-aux">
+      
+    <div class="social">
+  
+        
+      <ul class="social__list"><li><a href="https://www.facebook.com/ScienceMagazine" data-is-collapsible="0" data-is-collapsed="1" title="Facebook" class="social__icon link-icon-only link-icon" target="_blank"><i class="fa fa-facebook fa-lg"></i> <span class="title element-invisible">Facebook</span></a></li>
+<li><a href="https://twitter.com/sciencemagazine" title="Science Magazine on Twitter" class="social__icon link-icon-only link-icon" target="_blank"><i class="fa fa-twitter fa-lg"></i> <span class="title element-invisible">Twitter</span></a></li>
+<li><a href="https://plus.google.com/104077269810469435941/posts" data-is-collapsible="0" data-is-collapsed="1" title="Google+" class="social__icon link-icon-only link-icon" target="_blank"><i class="fa fa-google-plus fa-lg"></i> <span class="title element-invisible">Google+</span></a></li>
+<li><a href="http://www.sciencemag.org/about/email-alerts-and-rss-feeds" class="social__icon link-icon-only link-icon"><i class="fa fa-rss fa-lg"></i> <span class="title element-invisible">Rss</span></a></li>
+</ul>  
+</div>
+<nav class="auxnav">
+  
+        
+      <ul class="auxnav__list"><li><a href="http://www.sciencemag.org/authors/contributing-science-family-journals" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Authors</a></li>
+<li><a href="http://www.sciencemag.org/members" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Members</a></li>
+<li><a href="http://www.sciencemag.org/librarian" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Librarians</a></li>
+<li><a href="http://www.sciencemag.org/advertisers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Advertisers</a></li>
+</ul>  
+</nav>
+</div><div  class="header--nav" id="block-panels-mini-jnl-science-header-nav">
+      
+    <nav class="nav-primary">
+  
+        
+      <ul class="topnav topnav--option-3"><li class="topnav__item"><a href="http://www.sciencemag.org/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Home</a><ul class="subnav"><li class="subnav__item"><a href="http://www.sciencemag.org/videos" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Recent Videos</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/podcasts" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Latest Podcasts</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/slideshow" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Photo Galleries</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/projects/dance-your-phd" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Dance Your Ph.D. Contest</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/projects/data-stories" class="" data-icon-position="" data-hide-link-title="0">Data Stories Contest</a></li></ul></li><li class="topnav__item"><a href="http://www.sciencemag.org/news" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">News</a><ul class="subnav"><li class="subnav__item"><a href="http://www.sciencemag.org/news/latest-news" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Latest News</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/news/scienceinsider" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">ScienceInsider</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/news/scienceshots" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">ScienceShots</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/news/sifter" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Sifter</a></li><li class="subnav__item"><a href="/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">From the Magazine</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/news/about-news-science" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">About News</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/news/quiz" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Quizzes</a></li></ul></li><li class="current topnav__item"><a href="http://www.sciencemag.org/journals" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="sci scitransmed sigtrans advances" data-icon-position="">Journals</a><ul class="subnav"><li class="current subnav__item"><a href="/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="sci" data-icon-position="">Science</a></li><li class="subnav__item"><a href="http://advances.sciencemag.org/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="advances" data-icon-position="">Science Advances</a></li><li class="subnav__item"><a href="http://immunology.sciencemag.org/" class="" data-icon-position="" data-hide-link-title="0">Science Immunology</a></li><li class="subnav__item"><a href="http://robotics.sciencemag.org" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Science Robotics</a></li><li class="subnav__item"><a href="http://stke.sciencemag.org/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="sigtrans" data-icon-position="">Science Signaling</a></li><li class="subnav__item"><a href="http://stm.sciencemag.org/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="scitransmed" data-icon-position="">Science Translational Medicine</a></li></ul></li><li class="topnav__item"><a href="http://www.sciencemag.org/topics" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Topics</a><ul class="subnav"><li class="subnav__item"><a href="http://www.sciencemag.org/topics" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">All Topics</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/journals/science-special-issues" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Special Issues</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/custom-publishing" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Custom Publishing</a></li></ul></li><li class="topnav__item"><a href="http://www.sciencemag.org/careers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Careers</a><ul class="subnav"><li class="subnav__item"><a href="http://www.sciencemag.org/careers/articles" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Articles</a></li><li class="subnav__item"><a href="http://jobs.sciencecareers.org/?_ga=1.155765947.1469154522.1409920411" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Find Jobs</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/career-resources" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Career Resources</a></li><li class="subnav__item"><a href="http://scforum.sciencecareers.org/?_ga=1.121809803.1469154522.1409920411" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Forum</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/for-employers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">For Employers</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/employers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Employer Profiles</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/graduate-programs" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Graduate Programs</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/booklets" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Booklets</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/articles-custom-publishing" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Careers Features</a></li><li class="subnav__item"><a href="http://www.sciencemag.org/careers/about-science-careers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">About Careers</a></li></ul></li><li class="topnav__item"><form class="highwire-quicksearch form-search--nav form-inline" action="/user/login?destination=/front" method="post" id="highwire-search-quicksearch-form" accept-charset="UTF-8"><form class="highwire-quicksearch form-search--nav form-inline" action="/user/login?destination=/front" method="post" id="highwire-search-quicksearch-form" accept-charset="UTF-8"><div class="field-container--inline">  <label class="element-invisible" for="edit-keywords">Search</label>
+ <input placeholder="Search" class="search-field form-text" type="text" id="edit-keywords" name="keywords" value="" maxlength="128" />
+<button data-font-icon="icon-search" data-icon-position="after" class="btn search-submit" type="submit" id="edit-submit" name="op" value="&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Search&lt;/span&gt;"><i class="fa fa-search"></i><span class="element-invisible">Search</span></button><input type="hidden" name="form_build_id" value="form-LKt3p3HRM33djX-HHcPyUWTnMxppjtlzCCv5tV1U7WE" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form" />
+</div></form></form></li></ul>  
+</nav>
+</div>  </div>
+  </div>
+</header>
+<div role="main">
+          <div  class="region region-content content">
+    <a id="main-content"></a>
+    <div  class="" id="block-system-main">
+      
+  <div class="row">
+  <div class="container container--content">
+            <div class="tertiary">
+          </div>
+              <div class="primary">
+      <div class="panel-pane pane-page-title">
+  
+      
+  
+  <div class="pane-content">
+    <h1>Log in</h1>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-jnl-sci-login">
+  
+      
+  
+  <div class="pane-content">
+      <div><div class="panel-pane pane-jnl-sci-sso-link">
+  
+        <h2 class="pane-title">Via AAAS ID</h2>
+    
+  
+  <div class="pane-content">
+    <div class="login--sso"><form action="https://signin.aaas.org/oxauth/seam/resource/restv1/oxauth/authorize" class="login__link"><input type="hidden" name="response_type" value="code" /><input type="hidden" name="client_id" value="@!DF52.8A2B.1610.1D59!0001!F186.A7D4!0008!AB98.2411" /><input type="hidden" name="redirect_uri" value="http://classic.sciencemag.org/oauth2/code/" /><input type="hidden" name="scope" value="openid org.aaas" /><input type="hidden" name="state" value="http://science.sciencemag.org/front?sso=1&sso_redirect_count=1" /><input type="submit" value="via AAAS ID" /></form><div class="login__text">Use your <a href="https://signin.aaas.org/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&amp;client_id=%40%21DF52.8A2B.1610.1D59%210001%21F186.A7D4%210008%21AB98.2411&amp;redirect_uri=http%3A%2F%2Fclassic.sciencemag.org%2Foauth2%2Fcode%2F&amp;scope=openid+org.aaas&amp;state=http%3A%2F%2Fscience.sciencemag.org%2Fuser%2Flogin%3Fdestination%3D%2Ffront%26sso%3D1%26sso_redirect_count%3D1" class="login-link-highlight" data-icon-position="" data-hide-link-title="0">via AAAS ID</a> and password to log in. Not a member? Click <a href="http://www.aaas.org/membercentral/join-aaas" target="blank">here</a> to join</div></div>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-snippet">
+  
+      
+  
+  <div class="pane-content">
+    <div class="jnl-sci-challenge-footer" id="jnl-sci-challenge-footer">
+  
+      
+  <div class="snippet-content">
+    <p><a href="https://backissues.sciencemag.org">Order a single issue</a></p>
+
+<h2>Free with registration</h2>
+
+<p>Science research is available free with registration one year&nbsp;after initial publication. To get your free access please visit our <a href="https://pubs.aaas.org/Promo/promo_setup_rd.asp?dmc=P0RFA1">registration form</a>.</p>
+  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+    </div>
+              <div class="secondary">
+      <div class="panel-pane pane-panels-mini pane-jnl-sci-sidebar-ads">
+  
+      
+  
+  <div class="pane-content">
+      <div id='aaas-util-side-2'></div><div id='aaas-oas_Right2'></div><div id='aaas-util-side-3'></div><div id='aaas-oas_x51'></div>  </div>
+
+  
+  </div>
+    </div>
+          </div>
+</div>
+</div>  </div>
+  </div>
+<div class="row row--alt row--promo">
+    <div  class="region region-pre-footer pre--footer container--promo container">
+    
+  <div class="primary"><h2 class="subsection-title heading--block"><a href="https://pubs.aaas.org/Promo/promo_setup_rd.asp?dmc=P5XPZ" target="_blank">Science</a></h2>  <div class="primary__main promo-foot--mag"><div class="promo-foot--current">
+  
+        
+      <div class="highwire-article-citation highwire-citation-type-highwire-issue" data-pisa="sci;356/6335" data-pisa-master="sci;356/6335" data-apath="/sci/356/6335.atom" id="sci3566335atom"><h3>21 April 2017</h3>
+<p class="promo-foot__meta">Vol 356, Issue 6335</p>
+<a href="https://pubs.aaas.org/Promo/promo_setup_rd.asp?dmc=P5XPZ" target="_blank" class="" data-icon-position="" data-hide-link-title="0"><img class="promo-foot__cover" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/default/files/styles/sci_footer_promo_cover/public/externals/ac6497ca024088e696d301c97b487fde.gif?itok=aMtUu_4H" alt="Magazine Cover" /></a></div>  
+</div>
+<div class="promo-foot--heds">
+  
+        
+      <ul class="media-grid media-grid--2 media-grid--minor"><li class="first"><div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="sci;356/6335/236" data-pisa-master="sci;356/6335/236" data-apath="/sci/356/6335/236.atom" id="sci3566335236atom"><h3 class="overline">Feature</h3>
+  <a href="/content/356/6335/236" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0"><span class="highwire-cite-title">Lord of the rings</span></a></div></li>
+<li><div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="sci;356/6335/253" data-pisa-master="sci;356/6335/253" data-apath="/sci/356/6335/253.atom" id="sci3566335253atom"><h3 class="overline">Environmental Economics</h3>
+  <a href="/content/356/6335/253" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0"><span class="highwire-cite-title">Putting a value on injuries to natural assets: The BP oil spill</span></a></div></li>
+<li><div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="sci;356/6335/255" data-pisa-master="sci;356/6335/255" data-apath="/sci/356/6335/255.atom" id="sci3566335255atom"><h3 class="overline">Repatriation</h3>
+  <a href="/content/356/6335/255" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0"><span class="highwire-cite-title">Culture clash</span></a></div></li>
+<li><div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="sci;356/6335/226" data-pisa-master="sci;356/6335/226" data-apath="/sci/356/6335/226.atom" id="sci3566335226atom"><h3 class="overline">SCI COMMUN</h3>
+  <a href="/content/356/6335/226" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0"><span class="highwire-cite-title">News at a glance</span></a></div></li>
+<li><div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="sci;356/6335/245" data-pisa-master="sci;356/6335/245" data-apath="/sci/356/6335/245.atom" id="sci3566335245atom"><h3 class="overline">Nanomaterials</h3>
+  <a href="/content/356/6335/245" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0"><span class="highwire-cite-title">Oxidation at the atomic scale</span></a></div></li>
+<li class="last"><div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="sci;356/6335/342" data-pisa-master="sci;356/6335/342" data-apath="/sci/356/6335/342.atom" id="sci3566335342atom"><h3 class="overline">Working Life</h3>
+  <a href="/content/356/6335/342" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0"><span class="highwire-cite-title">The new tissue culture</span></a></div></li>
+</ul><p><a href="http://science.sciencemag.org/content/356/6335" class="btn--cta btn--cta--small" data-icon-position="" data-hide-link-title="0">Table of Contents</a></p>  
+</div>
+</div><div class="primary__secondary">
+  
+        
+      <div id='aaas-util-foot-1'></div>  
+</div>
+</div>  <div class="secondary"><div id='aaas-util-foot-2'></div></div>  </div>
+</div>
+
+  <div class="row row--footnav">
+      <div  class="region region-footer-nav footer--nav container">
+    <footer  class="site-footer" id="block-menu-menu-footer-nav" role="contentinfo">
+      
+  <ul class="nav-footer"><li class="expanded"><a href="http://www.sciencemag.org/about/about-us" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">About us</a><ul class="nav-footer__subnav"><li><a href="http://www.sciencemag.org/journals/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Journals</a></li>
+<li><a href="http://www.sciencemag.org/about/leadership" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Leadership</a></li>
+<li><a href="http://www.sciencemag.org/about/team-members" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Team members</a></li>
+<li><a href="http://www.aaas.org/page/employment-aaas" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Work at AAAS</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.sciencemag.org/advertisers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Advertise</a><ul class="nav-footer__subnav"><li><a href="http://www.sciencemag.org/advertisers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Advertising kits</a></li>
+<li><a href="http://www.sciencemag.org/custom-publishing" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Custom publishing</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.sciencemag.org/subscribers" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">For subscribers</a><ul class="nav-footer__subnav"><li><a href="http://www.sciencemag.org/librarian" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Site license info</a></li>
+<li><a href="http://www.sciencemag.org/members" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">For members</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.sciencemag.org/about/international-versions" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">International</a><ul class="nav-footer__subnav"><li><a href="http://www.sciencemagchina.cn/" class="" data-icon-position="" data-hide-link-title="0">Chinese</a></li>
+<li><a href="http://www.sciencemag.jp/" class="" data-icon-position="" data-hide-link-title="0">Japanese</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.sciencemag.org/help" class="" data-icon-position="" data-hide-link-title="0">Help</a><ul class="nav-footer__subnav"><li><a href="http://www.sciencemag.org/subscriptions" class="" data-icon-position="" data-hide-link-title="0">Access &amp; subscriptions</a></li>
+<li><a href="https://backissues.sciencemag.org/" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Order a Single Issue</a></li>
+<li><a href="http://www.sciencemag.org/help/reprints-and-permissions" class="" data-icon-position="" data-hide-link-title="0">Reprints &amp; permissions</a></li>
+<li><a href="http://www.sciencemag.org/about/contact-us" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Contact us</a></li>
+<li><a href="http://www.sciencemag.org/about/accessibility" data-hide-link-title="0" data-is-collapsible="0" data-is-collapsed="1" class="" data-icon-position="">Accessibility</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.sciencemag.org/about/email-alerts-and-rss-feeds" data-hide-link-title="0" class="" data-icon-position="">Stay Connected</a><ul class="social__list"><li><a href="https://www.facebook.com/ScienceMagazine" title="Facebook" class="social__icon link-icon-only link-icon" target="_blank"><i class="fa fa-facebook fa-lg"></i> <span class="title element-invisible">Facebook</span></a></li>
+<li><a href="https://twitter.com/sciencemagazine" title="Twitter" class="social__icon link-icon-only link-icon" target="_blank"><i class="fa fa-twitter fa-lg"></i> <span class="title element-invisible">Twitter</span></a></li>
+<li><a href="https://plus.google.com/104077269810469435941/posts" title="Google+" class="social__icon link-icon-only link-icon" target="_blank"><i class="fa fa-google-plus fa-lg"></i> <span class="title element-invisible">GooglePlus</span></a></li>
+<li><a href="http://www.sciencemag.org/about/email-alerts-and-rss-feeds" data-is-collapsible="0" data-is-collapsed="1" title="RSS Feeds" class="social__icon link-icon-only link-icon"><i class="fa fa-rss fa-lg"></i> <span class="title element-invisible">RSS Feeds</span></a></li>
+</ul></li>
+</ul></footer>  </div>
+  </div>
+
+<div id="sci-footer-end" class="row row--footer">
+  <div class="container container--footer">
+  <div class="footer__header">
+    <div class="site-logo--footer">
+      <a href="http://sciencemag.org" class="" data-icon-position="" data-hide-link-title="0"><img src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/images/logo-aaas.svg" alt="Science/AAAS" /></a>    </div>
+  </div>
+      <div  class="footer__body" id="block-panels-mini-science-footer-body">
+      
+    <p class="copyright-statement">&copy; 2017 <a href="http://www.aaas.org/">American Association for the Advancement of Science</a>. All rights Reserved. AAAS is a partner of <a href="http://www.who.int/hinari/en/">HINARI</a>, <a href="http://www.aginternetwork.org/en/">AGORA</a> <a href="http://www.unep.org/oare/">OARE</a>, <a href="http://www.patientinform.org/">PatientInform, </a> <a href="http://www.chorusaccess.org">CHORUS, </a> <a href="http://www.clockss.org">CLOCKSS, </a> <a href="http://www.crossref.org/">CrossRef</a> and <a href="http://www.projectcounter.org/">COUNTER</a>. <cite>Science</cite> ISSN 1095-9203.</p>
+<div class="">
+  
+        
+      <ul class="footlinks"><li><a href="http://www.sciencemag.org/about/terms-service" class="" data-icon-position="" data-hide-link-title="0">Terms of Service</a></li>
+<li><a href="http://www.sciencemag.org/about/privacy-policy" class="" data-icon-position="" data-hide-link-title="0">Privacy Policy</a></li>
+<li><a href="http://www.sciencemag.org/about/contact-us" class="" data-icon-position="" data-hide-link-title="0">Contact Us</a></li>
+</ul>  
+</div>
+<div id='aaas-oas_x30'></div></div>  </div></div>
+    <script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/misc/drupal.js?oobhtx"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+;var _prum=[['id','568d96eaabe53dc70c276890'],['mark','firstbyte',(new Date()).getTime()]];(function(){var t=document.getElementsByTagName('script')[0],e=document.createElement('script');e.async='async';e.src='//rum-static.pingdom.net/prum.min.js';t.parentNode.insertBefore(e,t)})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+;document.createElement('picture');
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/highwire/highwire/js/highwire.equal-heights.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/highwire/highwire/js/highwire.panels-ajax-tab.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/shared/jnl_sci_styles/js/jnl_sci_script.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/libraries/colorbox/jquery.colorbox-min.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/colorbox/js/colorbox.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/highwire/highwire/highwire_log/highwire_log.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/panels/js/panels.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/google_analytics/googleanalytics.js?oobhtx"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(a,c,o,s,e,n,t){a['GoogleAnalyticsObject']=e;a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date();n=c.createElement(o),t=c.getElementsByTagName(o)[0];n.async=1;n.src=s;t.parentNode.insertBefore(n,t)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-189672-10',{'cookieDomain':'auto'});ga('set','anonymizeIp',!0);ga('send','pageview');
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/js/jquery.sticky.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/js/jquery.stickyHeader.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/js/jquery.switchPng.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/js/mediaelement-and-player.min.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/library/js/respondTable.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/themes/shared/science_jcore/js/script.js?oobhtx"></script>
+<script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/highwire/highwire/highwire_responsive/js/highwire-mediaqueries.js?oobhtx"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+;jQuery.extend(Drupal.settings,{'basePath':'\/','pathPrefix':'','ajaxPageState':{'theme':'science_jcore','theme_token':'rfmMR6C3WAo6AbZQlaNOBADvX7U2hr0ekVcsRIAFBsM','css':{'modules\/system\/system.base.css':1,'modules\/system\/system.menus.css':1,'modules\/system\/system.messages.css':1,'modules\/system\/system.theme.css':1,'sites\/all\/modules\/contrib\/date\/date_api\/date.css':1,'sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css':1,'modules\/field\/theme\/field.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_draw\/css\/highwire-draw.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_folders\/highwire_folders.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_responsive\/css\/highwire-responsive.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_saved_searches\/highwire_saved_searches.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_user\/highwire_user.css':1,'sites\/all\/modules\/shared\/jnl_sci_styles\/css\/jnl_sci_styles.css':1,'modules\/node\/node.css':1,'sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css':1,'modules\/search\/search.css':1,'modules\/user\/user.css':1,'sites\/all\/modules\/contrib\/views\/css\/views.css':1,'sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css':1,'sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css':1,'sites\/all\/modules\/contrib\/ctools\/css\/ctools.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire.style.highwire.css':1,'sites\/all\/modules\/highwire\/highwire\/css\/nlm-elements.css':1,'sites\/all\/modules\/contrib\/panels\/css\/panels.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_theme_tools\/css\/font-hwicons.css':1,'sites\/all\/modules\/highwire\/highwire\/highwire_theme_tools\/css\/font-hwicons-glyphs.css':1,'sites\/all\/themes\/shared\/science_jcore\/library\/css\/critical-jcore.css':1,'sites\/all\/themes\/shared\/science_jcore\/library\/css\/drupal-specific.css':1,'sites\/all\/themes\/shared\/science_jcore\/css\/global.css':1,'sites\/all\/themes\/shared\/science_jcore\/css\/temp.css':1,'sites\/all\/themes\/shared\/science_jcore\/system.theme.css':1,'sites\/all\/themes\/shared\/science_jcore\/system.base.css':1,'sites\/all\/themes\/shared\/science_jcore\/system.menus.css':1,'sites\/all\/themes\/shared\/science_jcore\/system.messages.css':1,'sites\/all\/themes\/shared\/science_jcore\/field.css':1,'sites\/all\/themes\/shared\/science_jcore\/date.css':1,'sites\/all\/themes\/shared\/science_jcore\/datepicker.1.7.css':1,'sites\/all\/themes\/shared\/science_jcore\/search_api_page.css':1,'sites\/all\/themes\/shared\/science_jcore\/jquery.ui.theme.min.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire_lens.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire_issue_archive.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire-article-citation-list.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire_search.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire_search_results_tool.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire_user.css':1,'sites\/all\/themes\/shared\/science_jcore\/highwire_folders.css':1,'sites\/all\/modules\/highwire\/highwire\/css\/highwire-forms.css':1},'js':{'sites\/all\/libraries\/enquire.js\/enquire.min.js':1,'sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js':1,'sites\/all\/modules\/contrib\/picture\/picture.min.js':1,'sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js':1,'misc\/jquery.once.js':1,'misc\/drupal.js':1,'sites\/all\/modules\/highwire\/highwire\/js\/highwire.equal-heights.js':1,'sites\/all\/modules\/highwire\/highwire\/js\/highwire.panels-ajax-tab.js':1,'sites\/all\/modules\/shared\/jnl_sci_styles\/js\/jnl_sci_script.js':1,'sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js':1,'sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js':1,'sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js':1,'sites\/all\/modules\/highwire\/highwire\/highwire_log\/highwire_log.js':1,'sites\/all\/modules\/contrib\/panels\/js\/panels.js':1,'sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js':1,'sites\/all\/themes\/shared\/science_jcore\/library\/js\/jquery.sticky.js':1,'sites\/all\/themes\/shared\/science_jcore\/library\/js\/jquery.stickyHeader.js':1,'sites\/all\/themes\/shared\/science_jcore\/library\/js\/jquery.switchPng.js':1,'sites\/all\/themes\/shared\/science_jcore\/library\/js\/mediaelement-and-player.min.js':1,'sites\/all\/themes\/shared\/science_jcore\/library\/js\/respondTable.js':1,'sites\/all\/themes\/shared\/science_jcore\/js\/script.js':1,'sites\/all\/modules\/highwire\/highwire\/highwire_responsive\/js\/highwire-mediaqueries.js':1}},'colorbox':{'opacity':'0.85','current':'{current} of {total}','previous':'\u00ab Prev','next':'Next \u00bb','close':'Close','maxWidth':'98%','maxHeight':'98%','fixed':!0,'mobiledetect':!0,'mobiledevicewidth':'480px'},'jcarousel':{'ajaxPath':'\/jcarousel\/ajax\/views'},'urlIsAjaxTrusted':{'\/user\/login?destination=\/front':!0},'highwireResponsive':{'enquire_enabled':1,'breakpoints_configured':1,'breakpoints':{'zero':'(min-width: 0px)','small':'(min-width: 480px)','med':'(min-width: 768px)','med2':'(min-width: 900px)','med3':'(min-width: 1025px)','large':'(min-width: 1100px)'}},'googleanalytics':{'trackOutbound':1,'trackMailto':1,'trackDownload':1,'trackDownloadExtensions':'7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip','trackColorbox':1}});
+//--><!]]>
+</script>
+    <script type="text/javascript" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/libraries/enquire.js/enquire.min.js?oobhtx"></script>
+<script type="text/javascript" async="async" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/picture/picturefill2/picturefill.min.js?v=2.3.1"></script>
+<script type="text/javascript" async="async" src="https://d2ufo47lrtsv5s.cloudfront.net/sites/all/modules/contrib/picture/picture.min.js?v=7.53"></script>
+    <script type="text/javascript">_satellite.pageBottom();</script>
+  </body>
+</html>

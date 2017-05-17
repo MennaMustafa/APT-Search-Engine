@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+    </head>
+   <body>
+   <img src="{% static 'logo.png' %}" style="display: inline-block; width: 20%">
+    <form method = "GET" action = "search" class="form-inline" style="margin-top: 1%; margin-left: 1%; display: inline-block">
+        <div class="form-group">
+            <input type="text" placeholder="Search here ((Fakes Google &#x1F60E;))" name="q" id="searchtext" class="form-control" required value="{{ q }}">
+        </div>
+        <input type="submit" class="btn btn-default" value="Search">
+    </form>
+    <hr>
+    {% for title, url in result %}
+      <div>
+        <h3 style="margin-left: 1%"><a href="{{ url }}">{{ title }}</a></h3>
+      </div>
+    {% endfor %}
+
+    <div class="pagination" style="margin-left: auto; margin-right: auto; position: absolute; bottom: 2%; text-align: center; width: 100%">
+        <span class="step-links">
+            {% if result.has_previous %}
+                <a href="?q={{ q }}&page={{ result.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ result.number }} of {{ result.paginator.num_pages }}.
+            </span>
+
+            {% if result.has_next %}
+                <a href="?q={{ q }}&page={{ result.next_page_number }}">next</a>
+            {% endif %}
+        </span>
+    </div>
+   </body>
+
+</html>
